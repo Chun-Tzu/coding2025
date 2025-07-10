@@ -1,13 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>小慈的網頁</title>
-</head>
-<body>
-    <h1>張君慈</h1>
-    <h3>今天在上課</h3>
-    <p>嗨 上課好好玩</p>
-</body>
+    <style>
+      .fat {
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <center>張君慈</center>
+      </h1>
+
+      <img src="./PK_banner.jpg" />
+    </header>
+
+    <main>
+      <h3>今天在上課</h3>
+      <p>嗨 上課好好玩</p>
+      <img src="./pikachu.png" alt="pokemon" />
+
+      <a href="https://tw.portal-pokemon.com/play/pokedex" target="_blank">
+        <img width="35%" src="./pikachu.png" alt="pokemon" />pokemon link
+      </a>
+
+      <ul>
+        <strong>使用招式</strong>
+        <li>鐵尾</li>
+        <li>十萬伏特</li>
+        <li>伏特攻擊</li>
+        <li>雷電拳</li>
+      </ul>
+      <p>
+        <span>簡介</span>
+        <span>嘿嘿</span>
+      </p>
+
+      <div class="education fat" id="education" style="color: red">
+        學歷
+        <ul>
+          <li>大學 <big>2016~2019</big></li>
+          <li>國小 <small>2002~2008</small></li>
+          <li>幼兒園</li>
+        </ul>
+      </div>
+      行事曆
+      <table border="1" style="width: 100%">
+        <thead>
+          <tr>
+            <th>上午</th>
+            <th>中午</th>
+            <th>下午</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>123</th>
+            <th>456</th>
+            <th>789</th>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>結論</td>
+            <td colspan="3">我是小廢廢</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <form action="">
+        <input type="text" placeholder="請輸入姓名" />
+        <input type="number" placeholder="請輸入年齡" />
+        <input type="tel" placeholder="請輸入電話" />
+        <input type="password" placeholder="請輸入密碼" />
+        <input type="email" placeholder="請輸入信箱" />
+
+        <input type="checkbox" id="agree" />
+        <label for="agree">是</label>
+        <input type="checkbox" />
+
+        <label><input type="radio" />是</label>
+        <label><input type="radio" />否</label>
+
+        <div>
+          喜歡的水果
+          <label><input type="checkbox" name="fruit" />蘋果</label>
+          <label><input type="checkbox" name="fruit" />香蕉</label>
+          <label><input type="checkbox" name="fruit" />西瓜</label>
+          <label><input type="checkbox" name="fruit" />水蜜桃</label>
+        </div>
+
+        <div>
+          備註
+          <textarea name="" id=""></textarea>
+        </div>
+
+        <div>
+          國家
+          <select name="" id="">
+            <option value="JP">日本</option>
+            <option value="TW">臺灣</option>
+            <option value="US">美國</option>
+          </select>
+        </div>
+
+        <button>送出</button>
+      </form>
+    </main>
+  </body>
 </html>
