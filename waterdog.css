@@ -1,1 +1,89 @@
-.header { background-color: bisque;}
+.header {
+  background-color: rgb(230, 153, 59);
+}
+* {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.red {
+  color: rgb(244, 232, 232);
+}
+.blue .blue-text {
+  color: rgb(255, 171, 102);
+}
+.green.green-text {
+  color: rgb(0, 236, 181);
+}
+.rainbow{background: linear-gradient(to bottom, bisque,rgb(255, 255, 255) );}
+
+.ran { background:linear-gradient(to right, rgb(227, 149, 149),rgb(66, 184, 98));}
+.bot {
+    padding: center;
+    width: 150px;
+    height: 150px;
+    margin: 100px 100px 100px 100px;
+    border-radius: 100%;
+    border: none;
+    font-weight: 900;
+    background-image: url(dog.jpg);
+    background-size: cover;
+    background-position:center;
+    line-height: 150px;
+    }
+
+ .bacc {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: rgb(235, 139, 14);
+  border: 10px rgb(193, 164, 164) solid;
+  transform:rotate(45deg) ;translateY:
+}
+.outer-circle{background: linear-gradient(to bottom, rgb(194, 111, 10),rgb(45, 175, 16) );width: 200px;
+  height: 200px;border-radius: 100%;align-items: center; 
+  justify-content: center;display: flex;}
+.inner-circle{background-color: rgb(128, 111, 144);width: 100px;
+  height: 100px;border-radius: 100%;align-items: center; 
+  justify-content: center;display: flex;}
+  .bacc:hover{background-image: url(pikachu.png); background-size: cover;}
+  .bacc:active{background-color: aquamarine; box-shadow:-10px -10px 10px 500px red;}
+  .message{display:inline-block;position: fixed;top: 10px;right: 10px;
+  background-color: blanchedalmond;border: rgb(0, 0, 0) solid 1px;padding: 10px 10px;
+  border-radius: 30%;}
+  .message::after{content:"看甚麼看";position: absolute;top: -5px;right: -5px;font-size: 0.6rem;color: red;}
+.box{background-color: blue;
+position: relative;height: 500px;width:500px ;}
+.box-center{display:inline-block;
+  background-color: aqua;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  height: 100px;
+  width:100px;}
+  .triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+  }
+.message:hover{padding: 100px 100px;
+  background-color: rgb(108, 219, 48);
+  background-image: url(pikachu.png);
+  transition: all 1s ease;}
+  .message.move{
+    right:50%;
+    opacity:0.7;
+    transform:translateX(50%);
+  }
+  *{box-sizing: border-box;}
+.flex-box {
+  border: 5px solid #75444f;
+  background-color: bisque;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  justify-content:space-between;
+  align-items: center;
+  
