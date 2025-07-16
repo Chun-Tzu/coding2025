@@ -1,11 +1,246 @@
-.header123{
-    background-color: burlywood;
+.header123 {
+  background-color: burlywood;
 }
 
-#id11{
-    background-color: orange;
+#id11 {
+  background-color: orange;
 }
 
-div{
-    background-color: rgb(246, 240, 132);
+div {
+  background-color: rgb(246, 240, 132);
+}
+
+* {
+  font-size: 1.3rem;
+}
+
+.red-text,
+.red {
+  color: red;
+}
+
+/* 有父層 子層 關係:引用時第一層要 class="blue" 第二層要class="blue-text" */
+.blue .blue-text {
+  color: blue;
+}
+
+.green.green-text {
+  color: green;
+}
+
+.yellow {
+  color: yellow;
+}
+
+#pink {
+  color: pink;
+}
+
+.ranbow-line {
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    rgb(240, 145, 226),
+    Purple
+  );
+}
+
+.my-btn {
+  background-image: url(./pikachu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: aqua; /* 背景 */
+  text-align: center; /* 文字水平置中 */
+  vertical-align: middle; /* 文字垂直置中 */
+  /* padding: 10px;  */
+  /* padding-top: 15px;  */
+  /* padding: 15px;  上右下左 內拒*/
+  border-radius: 50%; /* 圓角 */
+
+  font-weight: bold; /* 字體粗 */
+  height: 100%;
+  width: 100%; /*寬度*/
+  box-shadow: 5px 5px 5px 5px, grey;
+  margin: 10px; /* 外距 */
+}
+
+.my-btn:hover {
+  background-color: red;
+}
+
+.my-btn:active {
+  box-shadow: 2px 2px 2px 2px rgb(246, 233, 98);
+}
+
+.my-btn2 {
+  background-image: url(./pikachu.png);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* background: url(./pikachu.png) center; */
+  background-color: aqua; /* 背景 */
+  border-radius: 100%; /* 圓角 */
+  height: 200px;
+  width: 200px; /*寬度*/
+}
+
+.cercle {
+  background: red;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  line-height: 100px;
+  font-size: 20px;
+}
+
+.triangle-btn {
+  /* 按鈕基礎樣式 */
+  display: inline-flex; /* 讓內容和箭頭能在同一行 */
+  align-items: center; /* 垂直置中內容 */
+  justify-content: center; /* 水平置中內容 */
+  padding: 10px 20px; /* 內距 */
+  background-color: #007bff; /* 按鈕背景色 */
+  color: white; /* 文字顏色 */
+  border: none; /* 移除預設邊框 */
+  cursor: pointer; /* 滑鼠游標變手型 */
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px; /* 圓角 */
+  margin: 10px; /* 外距 */
+  position: relative; /* 為偽元素定位做準備 */
+}
+
+/* 三角形箭頭樣式 */
+.triangle-btn::after {
+  content: ""; /* 偽元素必須有 content 屬性 */
+  position: absolute; /* 相對於按鈕定位 */
+  display: block; /* 讓偽元素變成區塊，以便套用邊框 */
+  width: 0;
+  height: 0;
+}
+
+/* 向上三角形 */
+.triangle-up::after {
+  bottom: -10px; /* 箭頭放在按鈕下方 */
+  left: 50%;
+  transform: translateX(-50%); /* 水平置中 */
+  border-left: 10px solid transparent; /* 左邊框透明 */
+  border-right: 10px solid transparent; /* 右邊框透明 */
+  border-top: 10px solid #007bff; /* 頂邊框為按鈕顏色，形成向上箭頭 */
+}
+
+.message {
+  padding: 3px 6px;
+  border: dimgray solid 1px;
+  border-radius: 10px;
+  background-color: chocolate;
+  color: white;
+  display: inline-block;
+  /* position: absolute;
+  position: relative;
+  position: static;
+  */
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  /* transform: rotate(45deg) translateY(10px); */
+}
+
+.message:after {
+  content: "XXXXX";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 0.5rem;
+  color: red;
+}
+
+.message:hover {
+  padding: 3px 20px;
+}
+
+.message.move {
+  right: 50%;
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.my-btn:hover {
+  padding: 100px 100px;
+
+  transform: translateX(0px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: relative;
+  overflow: scroll;
+}
+
+.flex-box {
+  border: 1px solid rgb(240, 145, 226);
+  display: flex;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.box-center {
+  display: inline-block;
+  background-color: #007bff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.5rem;
+}
+
+/*  以下是老師的CODE  */
+.my-btn_00 {
+  /* background-color: aqua; 背景 */
+  /* background-image: url(./1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-size: contain;
+  background: url(./1.png) center no-repeat;
+  text-align: center; /* 文字水平置中 */
+  vertical-align: middle; /* 文字垂直置中 */
+  /* padding: 10px; 內距 */
+  /* padding-top: 15px; */
+  /* padding: 15px 10px 5px 20px; 上 右 下 左 */
+  padding: 10px 20px; /* 上下 左右 */
+  margin: 10px; /* 外距 */
+  border-radius: 20px; /* 圓角 */
+  font-weight: 900; /* 字體粗細 */
+  width: 100px; /* 寬度 */
+  height: 50px; /* 高度*/
+  /* box-shadow: 2px 2px 2px 2px gray; 陰影 */
+  /* margin: 0 auto; */
+  border: 1px solid #fd345f;
+  /* border-width: 1px;
+  border-color: #fd345f;
+  border-style: solid; */
+  /* border-style: ; */
+}
+.cercle_00 {
+  background: #fd345f;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  line-height: 100px;
 }

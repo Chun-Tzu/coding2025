@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>小慈的網頁</title>
     <style>
-      .fat {
-        font-weight: bold;
-        font-size: 1.5em;
-      }
+            .fat {
+              font-weight: bold;
+              font-size: 1.5em;
+            }
+
+          *{
+          font-size: 1.3rem;
+          }
     </style>
     <link rel="stylesheet" href="./pikachu_style.css" />
   </head>
@@ -18,6 +22,8 @@
       <h1 class="header123">
         <center>張君慈</center>
       </h1>
+
+      <h2 class="ranbow-line">彩虹區塊測試</h2>
 
       <img src="./PK_banner.jpg" />
     </header>
@@ -89,9 +95,11 @@
         <label><input type="radio" />是</label>
         <label><input type="radio" />否</label>
 
-        <div>
+        <div class="blue">
           喜歡的水果
-          <label><input type="checkbox" name="fruit" />蘋果</label>
+          <label class="blue-text">
+            <input type="checkbox" name="fruit" />蘋果</label
+          >
           <label><input type="checkbox" name="fruit" />香蕉</label>
           <label><input type="checkbox" name="fruit" />西瓜</label>
           <label><input type="checkbox" name="fruit" />水蜜桃</label>
@@ -102,8 +110,8 @@
           <textarea name="" id=""></textarea>
         </div>
 
-        <div>
-          國家
+        <div class="red-text">
+          國家1
           <select name="" id="">
             <option value="JP">日本</option>
             <option value="TW">臺灣</option>
@@ -111,8 +119,58 @@
           </select>
         </div>
 
-        <button>送出</button>
+        <div>
+          <span class="green green-text">國家2</span>
+          <select name="" id="">
+            <option value="JP">日本</option>
+            <option value="TW">臺灣</option>
+            <option value="US">美國</option>
+          </select>
+        </div>
+
+        <button class="red-text">送出</button>
+
+        <p class="yellow">顏色測試</p>
+
+        <p id="pink">顏色測試</p>
+
+        <p class="cercle">形狀測試</p>
+
+        <button class="red-text">範例</button>
+
+        <p class="cercle_00">範例鈕</p>
+
+        <button class="my-btn2">範例鈕</button>
+
+        <button class="my-btn">範例鈕</button>
       </form>
+
+      <!--
+      <div>
+        <button class="message">嗨</button>
+      </div>
+      -->
+      <div>
+        <p class="box">範例鈕範例鈕範例鈕範例鈕範例鈕範例鈕範例鈕範例鈕範</p>
+      </div>
+
+      <div>
+        <p class="flex-box">
+          範例鈕範例鈕範例鈕範例鈕範例鈕範例鈕範例鈕範例鈕範
+        </p>
+      </div>
+
+      <div
+        class="message"
+        data-count="10"
+        onclick="this.classList.toggle('move')"
+      >
+        MESSAGE
+      </div>
+
+      <div>
+        <button class="triangle-btn triangle-up">點我</button>
+      </div>
     </main>
   </body>
 </html>
