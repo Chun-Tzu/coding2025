@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>這裡是網頁名稱</title>
-    <style></style>
+    <style>
+      body {font-family:monospace;font-weight: 550;}
+    </style>
     <link rel="stylesheet" href="./waterdog.css"/>
   </head>
 
-  <body>
+  <body class="rainbow">
     <main>
       <hearder>
-        <h1 class="header">
+        <h1 class="ran">
           <center>看下面</center>
         </h1>
       </hearder>
@@ -80,7 +82,7 @@
           </td>
           </tfoot>
       </table><br>
-      <form= action="">
+      <form action="">
         <input type="text" placeholder="請輸入您的大名"/><br>
         <input type="tel" placeholder="請輸入您的手機"/><br>
         <input type="email" placeholder="請輸入電子郵箱"/><br>
@@ -89,16 +91,17 @@
         <lavel><input type="radio" name="yes" value="yesss"/>是</lavel>
         <lavel><input type="radio" name="yes" value="yesss?"/>是嗎?</lavel>
         </div>
-        <div>水狗?
-          <label><input type="checkbox"name="fruit"/>蘋狗</label>
-          <label><input type="checkbox"name="fruit"/>奇異狗</label>
-          <label><input type="checkbox"name="fruit"/>火龍狗</label>
+        <div class="blue">水狗?
+          <label class="blue-text"><input type="checkbox"name="fruit"/>蘋狗</label>
+          <label class="blue-text"><input type="checkbox"name="fruit"/>奇異狗</label>
+          <label class="blue-text"><input type="checkbox"name="fruit"/>火龍狗</label>
+          <label class="blue-text"><input type="checkbox"name="fruit"/>芒狗</label>
         </div>
         <div>
          有屁放放<br>
           <textarea name="" id=""></textarea>
         </div>
-        <div>國籍
+        <div class="green green-text">國籍
           <select name="" id="">
             <option value="TW">台灣</option>
             <option value="JP">日本</option>
@@ -106,8 +109,22 @@
             <option value="CN">中國</option>
           </select>
         </div>
-        <button>送出</button>
-      </form=>
+        <button class="red bot">Click</button>
+        <div>
+          <button class="bacc">button</button>
+        </div>
+        <div class="outer-circle">
+  <div class="inner-circle"></div>
+</div>
+  <div class="message" data-count="10" onclick="this.classList.toggle('move')">看我看我</div>
+  <div class="box"><div class="box-center"></div></div>
+  <div class="triangle-up"></div>
+    <div class="flex-box">
+        <div style="font-size: 0.5rem">context</div>
+        <div style="font-size: 0.5rem">context</div>
+        <div style="font-size: 0.5rem">context</div>
+        <div style="font-size: 0.5rem">context</div>
+      </form>
     </main>
   </body>
 </html>
